@@ -257,7 +257,11 @@
 	req_access = list(ACCESS_MEDICAL)
 	category = VENDOR_TYPE_DEPARTMENTAL
 	products = list(/obj/item/reagent_containers/hypospray/autoinjector/epinephrine = 4,
+					/obj/item/stack/medical/bruise_pack/suture = 5,
+					/obj/item/stack/medical/bruise_pack/suture/medicated = 3,
 					/obj/item/stack/medical/bruise_pack/advanced = 2,
+					/obj/item/stack/medical/ointment/regen_mesh = 5,
+					/obj/item/stack/medical/ointment/regen_mesh/advanced = 3,
 					/obj/item/stack/medical/ointment/advanced = 2,
 					/obj/item/reagent_containers/patch/styptic = 3,
 					/obj/item/reagent_containers/patch/silver_sulf = 3,

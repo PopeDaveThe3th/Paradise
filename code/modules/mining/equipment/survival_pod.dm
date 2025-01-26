@@ -191,7 +191,9 @@
 	desc = "Wall-mounted Medical Equipment dispenser. This one seems just a tiny bit smaller."
 	req_access = list()
 
-	products = list(/obj/item/stack/medical/splint = 2)
+	products = list(/obj/item/stack/medical/splint = 2,
+					/obj/item/stack/medical/bruise_pack/suture/emergency = 1,
+					/obj/item/stack/medical/ointment/regen_mesh = 1)
 	contraband = list()
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/economy/vending/wallmed/survival_pod, 32, 32)

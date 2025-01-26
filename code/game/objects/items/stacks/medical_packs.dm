@@ -178,6 +178,48 @@
 	heal_brute = 0
 	stop_bleeding = 900
 
+/obj/item/stack/medical/bruise_pack/suture
+	name = "sutures"
+	gender = PLURAL
+	icon = 'icons/obj/medical.dmi'
+	singular_name = "suture"
+	desc = "A bundle of sterilized sutures used for sealing up minor cuts and lacerations."
+	merge_type = /obj/item/stack/medical/bruise_pack/suture
+	icon_state = "suture"
+	healverb = "suture"
+	amount = 10
+	max_amount = 10
+	heal_brute = 10
+	stop_bleeding = 1200
+	dynamic_icon_state = TRUE
+
+/obj/item/stack/medical/bruise_pack/suture/emergency
+	name = "emergency sutures"
+	singular_name = "emergency suture"
+	desc = "A small bundle of cheap sutures. They're not pretty, but still quite effective at keeping the blood inside your body."
+	merge_type = /obj/item/stack/medical/bruise_pack/suture/emergency
+	icon_state = "suture"
+	healverb = "suture"
+	amount = 5
+	max_amount = 5
+	heal_brute = 5
+	stop_bleeding = 1200
+	dynamic_icon_state = TRUE
+
+/obj/item/stack/medical/bruise_pack/suture/medicated
+	name = "medicated sutures"
+	icon = 'icons/obj/medical.dmi'
+	singular_name = "medicated suture"
+	desc = "A bundle of sterilized sutures used for sealing up minor cuts and lacerations. These have been treated with potent healing chemicals, dramatically improving their wound-sealing capability."
+	merge_type = /obj/item/stack/medical/bruise_pack/suture/medicated
+	icon_state = "suture_medicated"
+	healverb = "suture"
+	amount = 10
+	max_amount = 10
+	heal_brute = 15
+	stop_bleeding = 2000
+	dynamic_icon_state = TRUE
+
 /obj/item/stack/medical/bruise_pack/advanced
 	name = "advanced trauma kit"
 	icon = 'icons/obj/medical.dmi'
@@ -267,6 +309,35 @@
 
 /obj/item/stack/medical/ointment/advanced/cyborg/syndicate
 	energy_type = /datum/robot_storage/energy/medical/adv_burn_kit/syndicate
+
+/obj/item/stack/medical/ointment/regen_mesh
+	name = "regenerative mesh"
+	gender = PLURAL
+	icon = 'icons/obj/medical.dmi'
+	singular_name = "mesh piece"
+	desc = "A sheet of bacteriostatic mesh used to dress minor burns, housed in a sterile packet."
+	merge_type = /obj/item/stack/medical/ointment/regen_mesh
+	icon_state = "regen_mesh"
+	healverb = "dress"
+	amount = 10
+	max_amount = 10
+	heal_burn = 10
+	dynamic_icon_state = TRUE
+
+
+/obj/item/stack/medical/ointment/regen_mesh/advanced
+	name = "advanced regenerative mesh"
+	gender = PLURAL
+	icon = 'icons/obj/medical.dmi'
+	singular_name = "mesh piece"
+	desc = "A sheet of medically-treated bacteriostatic mesh used to dress minor and moderate burns, housed in a sterile packet."
+	merge_type = /obj/item/stack/medical/ointment/regen_mesh/advanced
+	icon_state = "advanced_mesh"
+	healverb = "dress"
+	amount = 10
+	max_amount = 10
+	heal_burn = 15
+	dynamic_icon_state = TRUE
 
 //Medical Herbs//
 /obj/item/stack/medical/bruise_pack/comfrey
